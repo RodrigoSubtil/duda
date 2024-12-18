@@ -1,0 +1,161 @@
+/*- SEÇÃO TEMA-MESAS ------------------------------------------------------------------------------------------------------------*/
+
+.secao--tema-Mesas {
+    background-color: #495023;
+    padding: 4rem 6rem 6rem 6rem;
+}
+
+.secao--tema-Mesas div {
+    margin: 0 auto; /*tira o espaco em cima e em baixo e da uma margem automatica dos lados. se nao ele cola do lado esquerdo e nao fica centralidado se a gente aumenta e diminui o zoom*/
+    max-width: 1200px; /*tamanho maximo que a gente quer q ele cresça. dai arruma com o zoom*/
+    text-align: center;
+}
+
+.secao--tema-Mesas div h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.secao--tema-Mesas div p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: auto;
+    max-width: 60%;
+    padding-bottom: 2rem;
+}
+
+.secao--tema-Mesas div a {
+    background-color: #C28745;
+    border-radius: 2rem;
+    color: #495023;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    text-decoration: none;
+}
+
+/*- SEÇÃO VANTAGENS ------------------------------------------------------------------------------------------------------------*/
+
+.secao--vantagens {
+    background-color: #CBDA85;
+    padding: 6rem;
+}
+
+.secao__vantagens--conteudo {
+    display: grid;
+    grid-template-columns: 2fr auto;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 2rem;
+}
+
+.secao__vantagens--texto {
+    display: grid;
+    grid-column: 1;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+}
+
+.secao__vantagens--texto div {
+    grid-row: 1;
+}
+
+.secao__vantagens--texto div h2 {
+    color: #495023;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.secao__vantagens--texto div p {
+    color: #495023;
+    font-size: 20px;
+    line-height: 1.3;
+    padding-bottom: 1rem;
+}
+
+.secao__vantagens--texto ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+}
+
+.secao__vantagens--texto ul li {
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex: 1; /* ocupe todo o espaço disponível*/
+    padding: 2rem;
+    width: 100%;
+}
+
+.secao__vantagens--conteudo img {
+    border-radius: 1rem;
+    height: auto;
+    width: 100%;
+}
+
+/*- SECURSOS ------------------------------------------------------------------------------------------------------------*/
+
+.secao--recursos {
+    background-color: #CBDA85;
+    padding: 6rem;
+}
+
+.secao__recursos--conteudo {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.secao__recursos__conteudo--explicacao {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.secao__recursos__conteudo--explicacao img {
+    border-radius: 1rem;
+    height: auto;
+    width: 100%;
+}
+
+.secao__recursos__conteudo--explicacao div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.secao__recursos__conteudo--explicacao div h2 {
+    color: #495023;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.secao__recursos__conteudo--explicacao div p {
+    color: #495023;
+    font-size: 20px;
+    line-height: 1.3;
+    padding-right: 1rem;
+}
+
+.secao__recursos--conteudo ul {
+    display: grid;
+    gap: 1rem; /* Espaçamento entre os itens */
+    grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de largura igual */
+}
+
+.secao__recursos--conteudo ul li {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Propagação da utilização dos espaços Coworking">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/comum.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Espaço Coworking</title>
+</head>
+
+<!--CABEÇALHO -------------------------------------------------------------------------------------------------------- -->
+
+<body>
+
+<header class="cabecalho">
+    <div class="cabecalho--conteudo">
+        <a href="index.html"><img src="img/logotipo.png" alt="Imagem do logotipo"></a>
+        <nav class="cabecalho--nav"> <!--links de navegacao dentro da própria página-->
+            <ul>
+                <li><a href="servicos.html">Serviços</a></li>
+                <!--<a> ancora/botao para levar à paginas do proprio site-->
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Pomodoro</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+        <a class=" cabecalho__nav--conectar" href="#">Conecte-se</a>
+
+        <div class="cabecalho__menu--icone">
+            <img src="./img/menu_white_36dp.svg" alt="abrir menu">
+        </div>
+
+        <div class="menu-mobile">
+            <nav>
+                <ul>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="#">Reservas</a></li>
+                    <li><a href="#">Pomodoro</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Conecte-se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+<!--
+ acrescentei uma div geral depois do header
+ retirei o botao conecte-se e a logo de dentro da nav
+ acrescentei uma div para o menu mobile
+ dentro do menu mobile coloquei uma nav
+ coloquei uma class na div geral e na nav um
+
+
+-----
+no css:
+
+coloquei transition no .menu-mobile {
+
+ -->
+
+<!--SEÇÃO TEMA -------------------------------------------------------------------------------------------------------- -->
+
+<main>
+
+    <section class="secao--tema">
+        <div>
+            <!-- ESSA DIV SERVE PARA COLOCAR UM MAX-WIDTH NO TEXTO SEM ALTERAR O TAMANHO DA COR DE FUNDO-->
+            <span>Onde ideias ganham vida, conexões se fortalecem e seu trabalho atinge um
+                    novo patamar</span>
+        </div>
+    </section>
+
+    <!--SEÇÃO CONCEITO -------------------------------------------------------------------------------------------------------- -->
+
+
+    <section class="secao--conceito">
+        <div class="secao__conceito--conteudo">
+            <!-- ESSA DIV SERVE PARA COLOCAR UM MAX-WIDTH NO TEXTO SEM ALTERAR O TAMANHO DA COR DE FUNDO-->
+            <h2>Espaço coworking</h2>
+            <p>O coworking é um conceito inovador de espaço de trabalho que
+                prioriza a colaboração e a flexibilidade. Ao
+                contrário do ambiente tradicional de escritórios, ele permite que profissionais de diferentes áreas
+                compartilhem o mesmo espaço, promovendo trocas de ideias e sinergias. No Espaço Coworking, oferecemos um
+                ambiente cuidadosamente projetado para acolher freelancers, startups, estudantes e pequenas empresas,
+                criando uma comunidade vibrante e inspiradora.</p>
+            <a href="#">Conheça-nos melhor</a>
+        </div>
+    </section>
+
+    <!--SEÇÃO SOBRE -------------------------------------------------------------------------------------------------------- -->
+
+    <section class="secao--sobre">
+        <div class="secao__sobre--conteudo">
+            <!-- ESSA DIV SERVE PARA COLOCAR UM MAX-WIDTH NO TEXTO SEM ALTERAR O TAMANHO DA COR DE FUNDO-->
+            <div class="secao__sobre--topico">
+                <div>
+                    <span>01</span>
+                    <h3>Ambiente Inspirador</h3>
+                    <p>O design do Espaço Coworking foi pensado para inspirar. A
+                        combinação de cores terrosas, luz
+                        natural e móveis de madeira cria um ambiente acolhedor e moderno. As áreas comuns são projetadas
+                        para
+                        estimular a criatividade e a concentração.</p>
+                </div>
+                <img srcset="img/largeAmbiente.jpg 604w,
+                                      ./img/mediumAmbiente.jpg 302w,
+                                      ./img/smallAmbiente.jpg 151w"
+                     sizes="42vw"
+                     src="img/smallAmbiente.jpg"
+                     alt="Imagem do ambiente">
+            </div>
+
+            <hr> <!--faz um traço-->
+
+            <div class="secao__sobre--topico">
+                <div>
+                    <span>02</span>
+                    <h3>Sinergia e Colaboração</h3>
+                    <p>No Espaço Coworking, você não está apenas alugando uma mesa; está
+                        ingressando em uma comunidade.
+                        As
+                        interações diárias geram novas ideias, parcerias e, muitas vezes, soluções criativas para
+                        desafios
+                        comuns.</p>
+                </div>
+                <img srcset="img/largeSinergia.jpg 604w,
+                                    ./img/mediumSinergia.jpg 302w,
+                                    ./img/smallSinergia.jpg 151w"
+                     sizes="42vw"
+                     src="img/smallSinergia.jpg"
+                     alt="Imagem de duas pessoas conversando">
+            </div>
+
+            <hr> <!--faz um traço-->
+
+            <div class="secao__sobre--topico">
+                <div>
+                    <span>03</span>
+                    <h3>Redução de Custos</h3>
+                    <p>Economize em aluguel e despesas de escritório. Nossos planos de
+                        adesão incluem internet de alta
+                        velocidade, salas de reunião equipadas, impressoras e até mesmo café e snacks, tudo por uma
+                        fração
+                        do custo de um escritório tradicional.</p>
+                </div>
+                <img srcset="img/largeReducao.jpg 604w,
+                                    ./img/mediumReducao.jpg 302w,
+                                    ./img/smallReducao.jpg 151w"
+                     sizes="42vw"
+                     src="img/smallReducao.jpg"
+                     alt="Imagem de uma sala de reunião com televisão">
+            </div>
+
+            <hr> <!--faz um traço-->
+
+            <div class="secao__sobre--topico">
+                <div>
+                    <span>04</span>
+                    <h3>Flexibilidade de Uso</h3>
+                    <p>No Espaço Coworking, oferecemos diferentes planos de adesão
+                        (diário, semanal e mensal) que se
+                        adaptam
+                        ao seu ritmo de trabalho. Com acesso 24 horas, você pode trabalhar no seu próprio horário, sem
+                        restrições.</p>
+                </div>
+                <img srcset="img/largeFlexibilidade.jpg 604w,
+                                    ./img/mediumFlexibilidade.jpg 302w,
+                                    ./img/smallFlexibilidade.jpg 151w"
+                     sizes="42vw"
+                     src="img/smallFlexibilidade.jpg"
+                     alt="Imagem de um corredor com varias portas de vidro">
+            </div>
+            <hr> <!--faz um traço-->
+        </div>
+    </section>
+
+    <!-- SEÇÃO CLIENTES -------------------------------------------------------------------------------------------------------- -->
+
+    <section class="secao--clientes">
+        <div class="secao__clientes--conteudo">
+
+            <div class="secao__clientes--topo">
+                <h2>Nossos clientes dizem isso melhor!</h2>
+                <div class="secao__clientes--botoes">
+                    <button id="anterior">&lt;</button>
+                    <button id="proximo">&gt;</button>
+                </div>
+            </div>
+
+            <div class="secao__clientes--pessoas">
+                <div class="secao__clientes__pessoas--individuais">
+                    <img>
+                    <h3></h3>
+                    <h4></h4>
+                    <p>Trabalhar aqui me fez perceber o quanto estar cercado por outras pessoas motivadas impacta meu
+                        desempenho. A troca de ideias é constante e, muitas vezes, saímos do coworking com um novo
+                        projeto
+                        em mente.</p>
+                </div>
+
+                <div class="secao__clientes__pessoas--individuais">
+                    <img>
+                    <h3></h3>
+                    <h4></h4>
+                    <p>Nunca imaginei que trabalhar em um coworking faria tanta diferença. Em casa, era difícil manter o
+                        foco e me sentir produtivo. No Espaço Coworking, encontro a concentração que preciso e, ao mesmo
+                        tempo, faço novos contatos profissionais todos os dias.</p>
+                </div>
+
+                <div class="secao__clientes__pessoas--individuais">
+                    <img>
+                    <h3></h3>
+                    <h4></h4>
+                    <p>Escolher o Espaço Coworking foi uma das melhores decisões que tomei. O preço acessível dos planos
+                        de
+                        adesão me permite ter um espaço profissional sem estourar o orçamento. Vale muito a pena pelo
+                        suporte, as conexões e a qualidade do ambiente!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PERGUNTAS -------------------------------------------------------------------------------------------------------- -->
+
+    <section class="secao--perguntas">
+        <div class="secao__perguntas--conteudo">
+
+            <h2>Perguntas Frequentes</h2>
+
+            <div>
+                <details>
+                    <summary>
+                        Há opções de estacionamento para os membros?
+                        <span>+</span>
+                    </summary>
+                    <p>Durante o horário comercial (segunda a sexta, das 7h às 17h), os participantes devem estacionar
+                        no extremo leste do estacionamento do complexo de escritórios ou do outro lado da rua, no
+                        hotel. Após o horário comercial ou nos fins de semana, você pode usar as vagas de
+                        estacionamento imediatamente ao lado do prédio.</p>
+                </details>
+                <details>
+                    <summary>
+                        Qual é a sua política de cancelamento?
+                        <span>+</span>
+                    </summary>
+                    <p>Cancelamentos dentro de 24 horas da reserva original serão totalmente reembolsados. Se sua
+                        reserva for 10 ou mais dias antes, você pode cancelar e qualquer pagamento(s) além do seu
+                        depósito será reembolsado integralmente. Cancelamentos feitos com menos de 10 dias de
+                        antecedência da sua reserva serão reembolsados. Além disso, não há reembolsos para uso parcial
+                        do seu intervalo de tempo reservado.</p>
+                </details>
+                <details>
+                    <summary>
+                        Você tem equipamento adicional que eu possa alugar?
+                        <span>+</span>
+                    </summary>
+                    <p>Nós fornecemos um sistema amigável com qualquer aluguel de sala de conferência. Ele também inclui
+                        móveis de sala e equipamentos para videoconferência. Se você precisar de equipamento adicional,
+                        por favor nos avise com antecedência. Nós podemos fornecer quadros brancos, um pódio, uma
+                        impressora/copiadora e muito mais.</p>
+                </details>
+                <details>
+                    <summary>
+                        Quantas pessoas seu espaço para eventos comporta?
+                        <span>+</span>
+                    </summary>
+                    <p>Podemos acomodar até 60 pessoas com mesas e cadeiras, e até 75 convidados com mesas estilo
+                        coquetel.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FINAL -------------------------------------------------------------------------------------------------------- -->
+
+    <section class="secao--final">
+        <div>
+            <h2>Junte-se à comunidade de trabalho flexível</h2>
+        </div>
+    </section>
+
+
+</main>
+
+<!-- FOOTER -------------------------------------------------------------------------------------------------------- -->
+
+<footer class="secao--footer">
+    <div class="secao__footer--conteudo">
+
+        <h3>Espaço Coworking</h3>
+
+        <div class="secao__footer--informacoes">
+
+            <div class="secao__footer__informacoes-separadas">
+                <address> <!--agrupar dados de contato-->
+                    <a href="#">+351 913824004</a>
+                    <a href="#">espaçoCoworking@gmail.com</a>
+                    <a href="#">Edifício branco, Coimbra, Portugal</a>
+                </address>
+                <div>
+                    <a href="#"> <img src="img/face.png" alt="Facebook"></a>
+                    <a href="#"> <img src="img/insta.png" alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="secao__footer--informacoes-links">
+                <ul>
+                    <li><a href="#">Reservas</a></li>
+                    <li><a href="#">Termos de Serviços</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script src="js/comum.js"></script>
+<script src="js/index.js"></script>
+<script src="js/informacaoexterna.js"></script>
+</body>
+</html>
+
+
+<!-- adicionei uma div na lista class menu-->

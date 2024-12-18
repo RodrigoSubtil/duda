@@ -1,0 +1,530 @@
+/*- SEÇÃO CONCEITO ------------------------------------------------------------------------------------------------------------*/
+
+.secao--conceito {
+    background-color: #CBDA85;
+    padding: 6rem;
+}
+
+.secao__conceito--conteudo {
+    margin: 0 auto; /*tira o espaco em cima e em baixo e da uma margem automatica dos lados. se nao ele cola do lado esquerdo e nao fica centralidado se a gente aumenta e diminui o zoom*/
+    max-width: 1200px; /*tamanho maximo que a gente quer q ele cresça. dai arruma com o zoom*/
+    text-align: center;
+}
+
+.secao__conceito--conteudo h2 {
+    color: #495023;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 2rem; /*coloca o padding so em baixo*/
+}
+
+.secao__conceito--conteudo p {
+    color: #495023;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: auto; /*obedece o que foi definido antes*/
+    max-width: 45rem;
+    padding-bottom: 1.5rem;
+}
+
+.secao__conceito--conteudo a {
+    background-color: #C28745;
+    border-radius: 2rem;
+    color: #CBDA85;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .secao--conceito {
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .secao--conceito {
+        padding: 3rem;
+    }
+
+    .secao__conceito--conteudo h2 {
+        font-size: 32px;
+    }
+
+    .secao__conceito--conteudo p {
+        max-width: 30rem;
+        font-size: 18px;
+    }
+
+    .secao__conceito--conteudo a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .secao--conceito {
+        padding: 1rem;
+    }
+
+    .secao__conceito--conteudo h2 {
+        font-size: 28px;
+    }
+
+    .secao__conceito--conteudo p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .secao__conceito--conteudo a {
+        font-size: 16px;
+    }
+}
+
+/*-SEÇÃO SOBRE------------------------------------------------------------------------------------------------------------*/
+.secao--sobre {
+    background-color: #CBDA85;
+    padding: 6rem;
+}
+
+.secao__sobre--conteudo { /*tem as 4 div`s */
+    margin: 0 auto; /*tira o espaco em cima e em baixo e da uma margem automatica dos lados. se nao ele cola do lado esquerdo e nao fica centralidado se a gente aumenta e diminui o zoom*/
+    max-width: 1200px; /*tamanho maximo que a gente quer q ele cresça. dai arruma com o zoom*/
+}
+
+.secao__sobre--topico { /*tem uma div com todos com textos e uma img*/
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    column-gap: 2rem;
+}
+
+.secao__sobre--topico div { /*com todo o texto */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.secao__sobre--topico div span {
+    background-color: #C28745;
+    border-radius: 50%;
+    color: #495023;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+}
+
+.secao__sobre--topico div h3 {
+    color: #495023;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.secao__sobre--topico div p {
+    color: #495023;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-top: auto; /* Empurra o parágrafo para a parte inferior */
+}
+
+.secao__sobre--topico img {
+    border-radius: 2rem;
+    width: 100%;
+}
+
+.secao__sobre--conteudo hr {
+    background-color: #495023;
+    border: none;
+    height: 1px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+@media (max-width: 1100px) {
+    .secao__sobre--topico { /*tem uma div com todos com textos e uma img*/
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto;
+        gap: 1rem;
+    }
+
+    .secao__sobre--topico div { /*abrange so o texto*/
+        grid-row: 1;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .secao--sobre {
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .secao--sobre {
+        padding: 3rem;
+    }
+
+    .secao__sobre--topico div span {
+        font-size: 12px;
+    }
+
+    .secao__sobre--topico div h3 {
+        font-size: 32px;
+    }
+
+    .secao__sobre--topico div p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .secao--sobre {
+        padding: 1rem;
+    }
+
+    .secao__sobre--topico div span {
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .secao__sobre--topico div h3 {
+        font-size: 28px;
+    }
+
+    .secao__sobre--topico div p {
+        font-size: 16px;
+    }
+
+    .secao__sobre--conteudo hr {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+/*- SEÇÃO CLIENTES ------------------------------------------------------------------------------------------------------------*/
+.secao--clientes {
+    background-color: #495023;
+    padding: 6rem;
+}
+
+.secao__clientes--conteudo { /*contem todos*/
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.secao__clientes--topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; /* Distância entre os tópicos */
+    align-items: center;
+}
+
+.secao__clientes--conteudo h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.secao__clientes--botoes {
+    display: flex;
+    gap: 1rem;
+}
+
+.secao__clientes--botoes button {
+    background-color: #C28745;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.secao__clientes--pessoas {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.secao__clientes__pessoas--individuais {
+    background-color: #C28745;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 50%;
+}
+
+.secao__clientes__pessoas--individuais img {
+    border-radius: 50%;
+    margin-bottom: -1.5rem;
+}
+
+.secao__clientes__pessoas--individuais h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.secao__clientes__pessoas--individuais h4 {
+    color: white;
+    font-size: 20px;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    text-transform: capitalize; //coloca em maiuscula a primira letra
+}
+
+.secao__clientes__pessoas--individuais p {
+    bottom: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 1.3;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+
+@media (max-width: 1190px) {
+    .secao__clientes__pessoas--individuais img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 0.6rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .secao--clientes {
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .secao--clientes {
+        padding: 3rem;
+    }
+
+    .secao__clientes--pessoas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao__clientes__pessoas--individuais {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .secao--clientes {
+        padding: 1rem;
+    }
+
+    .secao__clientes--conteudo h2 {
+        font-size: 28px;
+    }
+
+    .secao__clientes__pessoas--individuais h3 {
+        font-size: 16px;
+    }
+
+    .secao__clientes__pessoas--individuais h4 {
+        font-size: 14px;
+    }
+
+    .secao__clientes__pessoas--individuais p {
+        font-size: 13px;
+    }
+}
+
+/*- SEÇÃO PERGUNTAS ok ------------------------------------------------------------------------------------------------------------*/
+.secao--perguntas {
+    background-color: #CBDA85;
+    padding: 6rem;
+}
+
+.secao__perguntas--conteudo {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.secao__perguntas--conteudo h2 {
+    color: #495023;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.secao__perguntas--conteudo div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.secao__perguntas--conteudo div details {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 70%;
+}
+
+.secao__perguntas--conteudo div details summary {
+    color: #495023;
+    cursor: pointer; /* Pra trocar pela mão */
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.secao__perguntas--conteudo div details p {
+    color: #495023;
+    font-size: 16px;
+    line-height: 1.3;
+    padding-top: 1rem;
+}
+
+@media (max-width: 992px) {
+    .secao--perguntas {
+        padding: 4rem;
+    }
+
+    .secao__perguntas--conteudo div details {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .secao--perguntas {
+        padding: 3rem;
+    }
+
+    .secao__perguntas--conteudo h2 {
+        font-size: 32px;
+        margin-bottom: 3rem;
+    }
+
+    .secao__perguntas--conteudo div details {
+        width: 85%;
+    }
+
+    .secao__perguntas--conteudo div details summary {
+        font-size: 18px;
+    }
+
+    .secao__perguntas--conteudo div details p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .secao--perguntas {
+        padding: 1rem;
+    }
+
+    .secao__perguntas--conteudo h2 {
+        font-size: 28px;
+        margin-bottom: 1.5rem;
+    }
+
+    .secao__perguntas--conteudo div {
+        gap: 1rem;
+    }
+
+    .secao__perguntas--conteudo div details {
+        width: 90%;
+    }
+
+    .secao__perguntas--conteudo div details summary {
+        font-size: 16px;
+    }
+
+    .secao__perguntas--conteudo div details p {
+        font-size: 12px;
+    }
+}
+
+/*- SEÇÃO FINAL ok ------------------------------------------------------------------------------------------------------------*/
+.secao--final {
+    background-color: #C28745;
+    padding: 6rem;
+}
+
+.secao--final div {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.secao--final div h2 {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.3; /* Aumentar o espaçamento entre linhas */
+    margin: auto;
+    max-width: 70%;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .secao--final {
+        padding: 4rem;
+    }
+
+    .secao--final div h2 {
+        font-size: 50px;
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .secao--final {
+        padding: 3rem;
+    }
+
+    .secao--final div h2 {
+        font-size: 40px;
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 576px) {
+    .secao--final {
+        padding: 1rem;
+    }
+
+    .secao--final div h2 {
+        font-size: 32px;
+        max-width: 90%;
+    }
+}
+
+/*
+coloquei borda pra deixar arredondado
+.secao__clientes__pessoas--individuais img {
+    border-radius: 50%;
+    margin-bottom: -1.5rem;
+}
+
+
+coloquei maiuscula
+.secao__clientes__pessoas--individuais h4 {
+    color: white;
+    font-size: 20px;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    text-transform: capitalize; //coloca em maiuscula a primira letra
+}
+
+ */
